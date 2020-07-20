@@ -1,2 +1,10 @@
-# go-design-patterns
-常见设计模式整理与学习
+# Design Patterns In Go
+
+## 设计模式
+### 创建型
+[简单工厂模式](./simple_factory)
+
+
+##意见与建议
+欢迎指出不恰当、错误之处，万分感谢。
+邮箱： suxiangd@gmail.com
