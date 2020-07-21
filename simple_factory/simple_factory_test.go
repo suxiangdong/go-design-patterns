@@ -3,21 +3,21 @@ package simple_factory
 import "testing"
 
 func TestWechatPay(t *testing.T) {
-	payObj, err := NewPayObj(Wechat)
+	payment, err := NewPayment(Wechat)
 	if err != nil {
 		t.Fatal("WechatPay not found")
 	}
-	if payReturn := payObj.Pay(); payReturn != Wechat {
+	if payReturn := payment.Pay(); payReturn != Wechat {
 		t.Fatal("WechatPay test fail")
 	}
 }
 
 func TestAliPay(t *testing.T) {
-	payObj, err := NewPayObj(Ali)
+	payment, err := NewPayment(Ali)
 	if err != nil {
 		t.Fatal("AliPay not found")
 	}
-	if payReturn := payObj.Pay(); payReturn != Ali {
+	if payReturn := payment.Pay(); payReturn != Ali {
 		t.Fatal("AliPay test fail")
 	}
 }

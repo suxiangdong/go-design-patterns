@@ -9,11 +9,11 @@ const (
 	Ali
 )
 
-type PayObj interface {
+type Payment interface {
 	Pay() int
 }
 
-func NewPayObj(payMethod int) (PayObj, error) {
+func NewPayment(payMethod int) (Payment, error) {
 	if payMethod == Wechat {
 		return &wechatPay{},nil
 	} else if payMethod == Ali {
