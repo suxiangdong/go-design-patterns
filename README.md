@@ -8,7 +8,7 @@
 [策略模式](./strategy)
 
 ### 结构型
-[装饰模式](./decorator)
+[装饰模式](./decorator)  
 [代理模式](./proxy)
 
 ## 意见与建议
