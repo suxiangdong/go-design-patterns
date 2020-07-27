@@ -13,7 +13,9 @@ type Payment interface {
 	Pay() int
 }
 
-func NewPayment(payMethod int) (Payment, error) {
+type Factory struct{}
+
+func (*Factory) NewPayment(payMethod int) (Payment, error) {
 	if payMethod == Wechat {
 		return &wechatPay{},nil
 	} else if payMethod == Ali {

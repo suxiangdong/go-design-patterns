@@ -25,7 +25,7 @@ func TestMultiCall(t *testing.T) {
 	// p2 = Factory{}.NewPayment('ali');
 	// p3 = Factory{}.NewPayment('ali');
 	// 这部分为重复代码，这样写是不好的
-	aliFactory := AliFactory{}
+	aliFactory := &AliFactory{}
 	payment_1 := aliFactory.NewPayment()
 	payment_2 := aliFactory.NewPayment()
 	payment_3 := aliFactory.NewPayment()
