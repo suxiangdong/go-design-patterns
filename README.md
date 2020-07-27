@@ -2,7 +2,7 @@
 
 ## 设计模式
 ### 创建型
-[简单工厂模式](./simple_factory)
+[简单工厂模式](./simple_factory)  
 [工厂方法模式](./factory_method)
 
 ### 行为型
