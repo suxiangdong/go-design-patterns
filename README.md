@@ -7,7 +7,8 @@
 [原型模式](./prototype)
 
 ### 行为型
-[策略模式](./strategy)
+[策略模式](./strategy)  
+[模板方法模式](./template_method)
 
 ### 结构型
 [装饰模式](./decorator)  
