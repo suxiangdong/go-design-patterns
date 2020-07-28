@@ -1,30 +1,46 @@
 package template_method
 
 type NotificationInterface interface {
+	send() string
+}
+
+type TemplateInterface interface {
 	Send() string
 	ParseContent() string
 }
 
-type BaseNotification struct {
+type Template struct {
 	NotificationInterface
 }
 
-func (n *BaseNotification) ParseContent() string {
+func (n *Template) ParseContent() string {
 	return "content"
 }
 
-func (n *BaseNotification) Send() string {
-	return ""
+func (n *Template) Send() string {
+	return n.send() + ":" + n.ParseContent()
 }
 
-type EmailNotification struct{ *BaseNotification }
+type EmailNotification struct{ *Template }
 
-func (n *EmailNotification) Send() string {
-	return "email: " + n.ParseContent()
+func (n *EmailNotification) send() string {
+	return "email"
 }
 
-type SmsNotification struct{ *BaseNotification }
+func NewEmailNotification() *EmailNotification {
+	emailNotification := &EmailNotification{}
+	temp := &Template{emailNotification}
+	return &EmailNotification{temp}
+}
 
-func (n *SmsNotification) Send() string {
-	return "sms: " + n.ParseContent()
+type SmsNotification struct{ *Template }
+
+func (n *SmsNotification) send() string {
+	return "sms"
+}
+
+func NewSmsNotification() *SmsNotification {
+	smsNotification := &SmsNotification{}
+	temp := &Template{smsNotification}
+	return &SmsNotification{temp}
 }
