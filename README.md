@@ -19,7 +19,8 @@
 
 ### 行为型
 [策略模式](./strategy)  
-[模板方法模式](./template_method)
+[模板方法模式](./template_method)  
+[观察者模式](./observer)
 
 ### 结构型
 [装饰模式](./decorator)  
