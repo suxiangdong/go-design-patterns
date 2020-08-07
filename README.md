@@ -15,7 +15,8 @@
 [简单工厂模式](./simple_factory)  
 [工厂方法模式](./factory_method)  
 [原型模式](./prototype)  
-[建造者模式](./builder)
+[建造者模式](./builder)  
+[抽象工厂模式](./abstract_factory)
 
 ### 行为型
 [策略模式](./strategy)  
