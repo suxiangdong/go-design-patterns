@@ -23,7 +23,8 @@
 [模板方法模式](./template_method)  
 [观察者模式](./observer)  
 [状态模式](./state)  
-[备忘录模式](./memento)
+[备忘录模式](./memento)  
+[迭代器模式]()
 
 ### 结构型
 [装饰模式](./decorator)  
