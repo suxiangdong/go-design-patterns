@@ -16,7 +16,8 @@
 [工厂方法模式](./factory_method)  
 [原型模式](./prototype)  
 [建造者模式](./builder)  
-[抽象工厂模式](./abstract_factory)
+[抽象工厂模式](./abstract_factory)  
+[单例模式](./singleton)
 
 ### 行为型
 [策略模式](./strategy)  
@@ -24,7 +25,7 @@
 [观察者模式](./observer)  
 [状态模式](./state)  
 [备忘录模式](./memento)  
-[迭代器模式]()
+[迭代器模式](./iterator)
 
 ### 结构型
 [装饰模式](./decorator)  
