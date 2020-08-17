@@ -25,7 +25,8 @@
 [观察者模式](./observer)  
 [状态模式](./state)  
 [备忘录模式](./memento)  
-[迭代器模式](./iterator)
+[迭代器模式](./iterator)  
+[命令模式](./command)
 
 ### 结构型
 [装饰模式](./decorator)  
