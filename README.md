@@ -26,7 +26,8 @@
 [状态模式](./state)  
 [备忘录模式](./memento)  
 [迭代器模式](./iterator)  
-[命令模式](./command)
+[命令模式](./command)  
+[职责链模式](./chain_of_responsibility)
 
 ### 结构型
 [装饰模式](./decorator)  
