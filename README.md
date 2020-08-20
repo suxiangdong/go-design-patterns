@@ -28,7 +28,8 @@
 [迭代器模式](./iterator)  
 [命令模式](./command)  
 [职责链模式](./chain_of_responsibility)  
-[中介者模式](./mediator)
+[中介者模式](./mediator)  
+[解释器模式](./interpreter)
 
 ### 结构型
 [装饰模式](./decorator)  
